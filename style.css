@@ -1,0 +1,310 @@
+/*-------------------
+--------------------- Font Import 
+---------------------
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&display=swap");
+
+/*------------------
+-------------------- CSS Reset
+--------------------
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------
+-------------------- Reused styling
+--------------------
+ */
+:root {
+  --color-soft-orange: hsl(35, 77%, 62%);
+  --color-soft-red: hsl(5, 85%, 63%);
+  --color-off-white: hsl(36, 100%, 99%);
+  --color-grayish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayish-blue: hsl(236, 13%, 42%);
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+  --ff-inter-400: "Inter 400";
+  --ff-inter-700: "Inter 700";
+  --ff-inter-800: "Inter 800";
+}
+
+/*------------------
+-------------------- Body styling
+--------------------
+ */
+body {
+  font-size: 15px;
+  background-color: var(--color-off-white);
+}
+
+/*------------------
+-------------------- Main styling
+--------------------
+ */
+.main {
+  height: 100vh;
+  padding-inline: 20px;
+}
+
+/*------------------
+-------------------- Header styling
+--------------------
+ */
+.header {
+  padding-block: 20px;
+}
+.header-details {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+}
+.icon-menu-open {
+  width: 40px;
+}
+.navbar {
+  display: none;
+}
+
+/*------------------
+-------------------- Article styling
+--------------------
+ */
+.article {
+}
+.article-main-image {
+  display: block;
+  margin-inline: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-block-end: 20px;
+}
+
+.article-main-title {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Inter";
+  margin-block-end: 20px;
+}
+
+.article-main-paragraph {
+  line-height: 1.3em;
+  margin-block-end: 20px;
+  color: var(--color-dark-grayish-blue);
+  font-family: "Inter";
+  text-align: justify;
+}
+
+.article-btn-readmore {
+  text-transform: uppercase;
+  padding-inline: 40px;
+  padding-block: 10px;
+  border: none;
+  margin-block-end: 50px;
+  background-color: var(--color-soft-red);
+  color: var(--color-off-white);
+  font-weight: bold;
+  font-family: "Inter";
+  letter-spacing: 4px;
+}
+/*------------------
+-------------------- Aside styling
+--------------------
+ */
+.article-aside {
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-off-white);
+  padding: 20px;
+  margin-block-end: 80px;
+}
+
+.article-aside-header {
+  font-size: 30px;
+  color: var(--color-soft-orange);
+  font-family: "Inter";
+  font-weight: bold;
+  margin-block-end: 40px;
+}
+
+.article-aside-title {
+  color: var(--color-off-white);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Inter";
+  margin-block-end: 15px;
+}
+hr {
+  margin-block-end: 30px;
+  border: 1px solid var(--color-off-white);
+}
+.article-aside-parag {
+  margin-block-end: 30px;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+/*------------------
+-------------------- Suggestions styling
+--------------------
+ */
+.article-suggestions {
+}
+.article-suggestions-item {
+  display: flex;
+  gap: 20px;
+  height: 200px;
+}
+
+.article-suggestions-img {
+  width: 130px;
+  height: 170px;
+  object-fit: cover;
+}
+.article-suggestions-item-number {
+  font-size: 40px;
+  font-family: "Inter";
+  font-weight: bold;
+  color: var(--color-grayish-blue);
+  margin-block-end: 20px;
+}
+.article-suggestions-item-title {
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: bold;
+  color: var(--color-very-dark);
+  margin-block-end: 15px;
+}
+.article-suggestions-item-parag {
+  font-size: 15px;
+  font-family: "Inter";
+  color: var(--color-dark-grayish-blue);
+}
