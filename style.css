@@ -354,3 +354,64 @@ hr {
   font-family: "Inter";
   color: var(--color-dark-grayish-blue);
 }
+
+/*------------------
+-------------------- Media Query
+--------------------
+ */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+    align-items: center;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar-nav {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .navbar-wrapper {
+    background-color: transparent;
+    padding: 0;
+    display: block;
+  }
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .overlay {
+    display: none;
+  }
+  .icon-menu-open {
+    display: none;
+  }
+  .icon-menu-close {
+    display: none;
+  }
+  .article-main-section {
+  }
+  .article-main-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+  .article-suggestions {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .article-wrapper {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+}
