@@ -24,38 +24,42 @@
         <div class="header-details">
           <img src="assets/images/logo.svg" alt="Website Logo" class="logo" />
           <img
+            onclick="navToggle(this);"
             src="assets/images/icon-menu.svg"
             alt="Icon Menu Open"
             class="icon-menu-open"
           />
         </div>
         <div class="navbar">
-          <div class="navbar-wrapper">
-            <img
-              src="assets/images/icon-menu-close.svg"
-              alt="Icon Menu Close"
-              class="icon-menu-close"
-            />
-            <ul class="navbar-list">
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">News</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Popular</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Trending</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Categories</a>
-              </li>
-            </ul>
-          </div>
+          <div class="navbar-nav">
+            <div class="navbar-wrapper">
+              <img
+                onclick="navToggle(this);"
+                src="assets/images/icon-menu-close.svg"
+                alt="Icon Menu Close"
+                class="icon-menu-close"
+              />
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">News</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Popular</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Trending</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Categories</a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="overlay"></div>
+            <div class="overlay"></div>
+          </div>
         </div>
       </header>
 
@@ -176,5 +180,6 @@
         </section>
       </article>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
