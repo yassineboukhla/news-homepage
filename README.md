@@ -10,7 +10,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -24,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here](https://github.com/yassineboukhla/news-homepage)
+- Live Site URL: [Here](https://yassineboukhla.github.io/news-homepage/)
 
 ## My process
 
@@ -34,12 +33,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
+- Learned how to do a mobile navbar
+
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- LinkedIn - [Here](https://www.linkedin.com/in/yassine-boukhla)
+- Frontend Mentor - [@yassineboukhla](https://www.frontendmentor.io/profile/yassineboukhla)
