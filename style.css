@@ -138,6 +138,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*------------------
 -------------------- Reused styling
@@ -237,6 +242,9 @@ body {
   font-family: "Inter";
   color: var(--color-very-dark-blue);
 }
+.navbar-link:hover {
+  color: var(--color-soft-orange);
+}
 /*------------------
 -------------------- Article styling
 --------------------
@@ -280,6 +288,9 @@ body {
   letter-spacing: 4px;
   cursor: pointer;
 }
+.article-btn-readmore:hover {
+  background-color: var(--color-very-dark-blue);
+}
 /*------------------
 -------------------- Aside styling
 --------------------
@@ -306,6 +317,9 @@ body {
   font-family: "Inter";
   margin-block-end: 15px;
   cursor: pointer;
+}
+.article-aside-title:hover {
+  color: var(--color-soft-orange);
 }
 hr {
   margin-block-end: 30px;
@@ -349,6 +363,9 @@ hr {
   margin-block-end: 15px;
   cursor: pointer;
 }
+.article-suggestions-item-title:hover {
+  color: var(--color-soft-orange);
+}
 .article-suggestions-item-parag {
   font-size: 15px;
   font-family: "Inter";
@@ -360,7 +377,7 @@ hr {
 --------------------
  */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 824px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -408,10 +425,53 @@ hr {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
+  body {
+    padding-inline: 125px;
+  }
   .article-wrapper {
     display: flex;
     gap: 20px;
     height: 100%;
+    margin-block-end: 40px;
+  }
+  .article-suggestions {
+    display: flex;
+    gap: 15px;
+  }
+  .article-suggestions-item {
+    display: flex;
+    gap: 20px;
+    height: 200px;
+  }
+  .article-suggestions-img {
+    width: 100px;
+    height: auto;
+    object-fit: none;
+  }
+  .article-main-section {
+    max-height: 600px;
+  }
+  .article-main-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .article-btn-readmore {
+    padding-block: 30px;
+    margin-inline-end: 125px;
+    letter-spacing: 6px;
+  }
+  .article-aside {
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-off-white);
+    padding: 20px;
+    max-height: 600px;
+    margin-block-end: 0px;
+  }
+  .article-aside-parag {
+    margin-block-end: 6px;
+    line-height: 22px;
+    font-size: 15px;
   }
 }
